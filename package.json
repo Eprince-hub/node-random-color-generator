@@ -1,0 +1,9 @@
+{
+	"name": "node-random-color-generator",
+	"version": "1.0.0",
+	"description": "Random color generator",
+	"main": "index.js",
+	"repository": "https://github.com/Eprince-hub/node-random-color-generator.git",
+	"author": "VICTOR EJIKE NWOSU <74430629+Eprince-hub@users.noreply.github.com>",
+	"license": "MIT"
+}
