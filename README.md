@@ -28,5 +28,5 @@ This is a node.js application that generates random color on the command line.
 
 ---
 
-### Generate a random color within a specified sizes(height and width) , hue and
-luminosity ![random color generator](https://i.imgur.com/uaWMy74.png)
+### Generate a random color within a specified sizes(height and width) , hue and luminosity 
+![random color generator](https://i.imgur.com/uaWMy74.png)
