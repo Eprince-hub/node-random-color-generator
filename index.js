@@ -56,6 +56,7 @@ function getRandomColor() {
 // console.log(chalk.hex(currentHexColor)(hashes));
 
 // print random color of hashes when no argument is given!
+
 if (!process.argv[2]) {
   const hashes = printHashes();
   const currentHexColor = getRandomColor();
@@ -66,8 +67,11 @@ if (!process.argv[2]) {
   // if it is not a number trigger this statement
   // the first argument and the third argument is needed to fire this process!
   if (isNaN(process.argv[2]) && isNaN(process.argv[3])) {
+    if (process.argv[2] === 'ask') {
+      console.log('Please enter a valid color name and luminosity!');
+    }
     // check if the first and second argument is true and fire!
-    if (process.argv[2] && process.argv[3]) {
+    else if (process.argv[2] && process.argv[3]) {
       const hue = process.argv[2];
       const luminosity = process.argv[3];
 
