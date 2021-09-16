@@ -12,10 +12,9 @@ function getRandomColor() {
   return newColor;
 }
 
-const hexColor = getRandomColor();
 // let currentColor = randomColor();
+const hexColor = getRandomColor();
 // console.log(chalk.hex(currentHexColor)(hashes));
-
 // print random color of hashes when no argument is given!
 
 if (!process.argv[2]) {
@@ -212,4 +211,5 @@ getRandomColor();
 		const hashes = printHashes();
 		console.log(chalk.hex(hashesColor)(hashes));
 	}
- */
+
+  */
