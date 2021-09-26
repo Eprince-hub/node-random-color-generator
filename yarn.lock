@@ -298,6 +298,11 @@
   resolved "https://registry.npmjs.org/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
 
+"@types/prompt-sync@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@types/prompt-sync/-/prompt-sync-4.1.1.tgz#c3a2a6e974110b2ff4d703d19ed0c0a1b85bc65b"
+  integrity sha512-ww0S+dKSnuiO+PstYQM7yyxEkl2Y0r5lhg/g/p4ObA6m4OWsXdtuQtB+ORj/+lQ5U5OeLNNnmYVaWVB/y2JjdA==
+
 "@types/prop-types@*":
   version "15.7.4"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.4.tgz"
@@ -464,10 +469,10 @@
     "@typescript-eslint/types" "4.31.0"
     eslint-visitor-keys "^2.0.0"
 
-"@upleveled/eslint-config-upleveled@1.17.0":
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/@upleveled/eslint-config-upleveled/-/eslint-config-upleveled-1.17.0.tgz#6f78e4e9a9dadd3923943f1911448a687bb26972"
-  integrity sha512-Lt8NdU/wc0bjec1QHP8LW3jVmeAPOnQctz3gWexDfVUNK/zcys54cP6th/KnazggBXCdDPJyDo565oEy91PDpQ==
+"@upleveled/eslint-config-upleveled@1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@upleveled/eslint-config-upleveled/-/eslint-config-upleveled-1.18.0.tgz#a014a60b19d8d1d81593e5af9a2c5f449653c3e6"
+  integrity sha512-7FhKjwFlzZf+7fPZ8yWuNPdGF6LCXqZ62GPbIgDls39JounhyndGL2uRgz75xDzLgbKU6p1vM2EONW0L7dIT2g==
 
 "@upleveled/eslint-plugin-upleveled@^1.1.0":
   version "1.1.0"
