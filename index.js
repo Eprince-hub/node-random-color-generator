@@ -1,5 +1,6 @@
 const randomColor = require('randomcolor');
 const chalk = require('chalk');
+const prompt = require('prompt-sync')();
 
 // Function that prints random hex color codes!
 function getRandomColor() {
@@ -17,6 +18,7 @@ const hexColor = getRandomColor();
 // console.log(chalk.hex(currentHexColor)(hashes));
 // print random color of hashes when no argument is given!
 
+// ########
 if (!process.argv[2]) {
   const hashes = `
   ###############################
@@ -30,19 +32,23 @@ if (!process.argv[2]) {
   ###############################
 
   `; // printHashes();
-  const currentHexColor = getRandomColor();
-  console.log(chalk.hex(currentHexColor)(hashes));
+  console.log(chalk.hex(hexColor)(hashes));
 
   // if argument is given check if it is a number or not!
 } else if (process.argv.length >= 2) {
   // if it is not a number trigger this statement
   // the first argument and the third argument is needed to fire this process!
   if (isNaN(process.argv[2]) && isNaN(process.argv[3])) {
+    // if it is not a number and the user put ask the do while loop will trigger!
+
     if (process.argv[2] === 'ask') {
-      console.log('Please enter a valid color name and luminosity!');
+      let userPrompt;
+      do {
+        userPrompt = prompt('Please enter a valid hue and luminosity!: ');
+      } while (userPrompt === 'ask');
     }
     // check if the first and second argument is true and fire!
-    else if (process.argv[2] && process.argv[3]) {
+    if (process.argv[2] && process.argv[3]) {
       const hue = process.argv[2];
       const luminosity = process.argv[3];
 
@@ -57,7 +63,7 @@ if (!process.argv[2]) {
   ###############################
   ###############################
   #####                     #####
-  #####      (${hexColor})      #####
+  #####      (${hashesColor})      #####
   #####                     #####
   ###############################
   ###############################
@@ -80,7 +86,7 @@ if (!process.argv[2]) {
   ###############################
   ###############################
   #####                     #####
-  #####      (${hexColor})      #####
+  #####      (${hashesColor})      #####
   #####                     #####
   ###############################
   ###############################
@@ -129,6 +135,29 @@ if (!process.argv[2]) {
     console.log(chalk.hex(hashesColor)(printedHashes));
   }
 }
+
+/*
+if (input1 === 'ask') {
+  do {
+    desiredHue = readline.question(`Please enter a color\n`).toLowerCase();
+    customHue = getCustomHue(desiredHue);
+    if (!customHue) {
+      console.log('Color not found. Please choose another.');
+    }
+  } while (!customHue); // if no valid color, customHue will not have been set, asks again
+
+  if (customHue !== 'white' && customHue !== 'black') {
+    // (if the hue value was "white" or "black", don't ask for lightness)
+    desiredLightness = readline.question(`Light or dark?\n`).toLowerCase();
+    customLightness = getCustomLightness(desiredLightness);
+  }
+}  */
+
+/*
+    do {
+      const userPrompt =  prompt('Please enter a valid hue and luminosity!: ');
+    } while (process.argv[2] === 'ask');
+ */
 
 /* function userPrintedHashes() {
       const squareHashes = [];
